@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer and Compressor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Image Resizer and Compressor</h1>
+        </div>
+
+        <div class="imageUpload">
+            <label for="imgInput" class="uploadLabel">Upload An Image</label>
+            <input type="file" id="imgInput" accept="image/*">
+        </div>
+
+        <div class="selections" style="display: none;">
+            <label for="unit">Unit:</label>
+            <select id="unit">
+                <option value="Pixels">Pixels</option>
+                <option value="Percentage">Percentage</option>
+            </select>
+
+            <div id="pixel" style="display: none;">
+                <label for="width">Width:</label>
+                <input type="number" id="width" placeholder="Width"> px<br>
+                <label for="height">Height:</label>
+                <input type="number" id="height" placeholder="Height"> px
+            </div>
+            
+            <div id="percent" style="display: none;">
+                <label for="percentage">Percentage:</label>
+                <input type="number" id="percentage" placeholder="Percentage"> % 
+            </div>
+
+            <div class="qualityGroup">
+                <label for="quality">Quality:</label>
+                <input type="range" id="quality" min="1" max="100" value="80"> <span id="qualityValue">80</span>
+            </div>
+        </div>
+    </div>
+    <script src="image.js"></script>
+</body>
+</html>

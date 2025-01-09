@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: hsl(5, 9%, 14%);
+    background-color: hsl(0, 0%, 20%);
+    font-family: Oswald;
+}
+header{
+    background-color: hsl(0, 0%, 30%);
+    text-align: center;
+    padding: 1rem 0;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.taskList{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+}
+.taskList div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: hsl(0, 0%, 40%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.markDone{
+    background-color: rgb(8, 101, 8);
+    border: none;
+    padding: none;
+    height: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
